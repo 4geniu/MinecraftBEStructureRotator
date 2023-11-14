@@ -1,0 +1,20 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "RotationStructures",
+    "uuid": "3d794963-9b44-4cf5-9e9b-82dbf0c370a9",
+    "version": [1,0,0],
+    "min_engine_version": [1,20,0],
+    "description": "A pack that adds rotation structures to Minecraft."
+  },
+  "modules": 
+  [
+    {
+      "type": "script",
+      "entry": "./main.js",
+      "language": "javascript",
+      "uuid": "26f44466-6611-4f8f-af4f-1bc32e4286aa",
+      "version": [1,0,0]
+    }
+  ]
+}
