@@ -1,6 +1,6 @@
 "use strict";
 
-var Mathematics = {
+const Mathematics = {
     rotatePos: function (pos, xDeg, yDeg, zDeg) {
 
       let xRad = xDeg * Math.PI / 180;
@@ -39,7 +39,15 @@ var Mathematics = {
         z: pos.z - centerPos.z,
       };
     },
+
+
+    calcWidthAndHeight: function (startPos, endPos) {
+      return {
+        width: Math.abs(startPos.x - endPos.x),
+        height: Math.abs(startPos.y - endPos.y),
+      };
+    }
 }
 
 
-module.exports = Mathematics;
+export default Mathematics;
