@@ -22,13 +22,23 @@ var Mathematics = {
       };
     },
 
+    
     calcCenterPos: function (startPos, endPos) {
       return {
         x: (startPos.x + endPos.x) / 2,
         y: (startPos.y + endPos.y) / 2,
         z: (startPos.z + endPos.z) / 2,
       };
-    }
+    },
+
+
+    calcDistanceFromCenter: function (centerPos, pos) {
+      return {
+        x: pos.x - centerPos.x,
+        y: pos.y - centerPos.y,
+        z: pos.z - centerPos.z,
+      };
+    },
 }
 
 
