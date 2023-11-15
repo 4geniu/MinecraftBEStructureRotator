@@ -1,0 +1,15 @@
+{
+  "name": "structure_rotator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./scripts/main.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "youkansan",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^28.1.3"
+  }
+}
+
