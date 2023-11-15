@@ -11,7 +11,7 @@
   [
     {
       "type": "script",
-      "entry": "./main.js",
+      "entry": "scripts/main.js",
       "language": "javascript",
       "uuid": "26f44466-6611-4f8f-af4f-1bc32e4286aa",
       "version": [1,0,0]
@@ -20,7 +20,7 @@
   "dependencies": [
     {
       "module_name": "@minecraft/server",
-      "version": "1.6.0"
+      "version": "1.7.0-beta"
     }
   ]
 }
