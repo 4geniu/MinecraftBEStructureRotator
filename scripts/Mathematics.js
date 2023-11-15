@@ -1,11 +1,15 @@
 "use strict";
 
 var Mathematics = {
-    rotatePos: function (xPos, yPos, zPos, xDeg, yDeg, zDeg) {
+    rotatePos: function (pos, xDeg, yDeg, zDeg) {
 
       let xRad = xDeg * Math.PI / 180;
       let yRad = yDeg * Math.PI / 180;
       let zRad = zDeg * Math.PI / 180;
+
+      let xPos = pos.x;
+      let yPos = pos.y;
+      let zPos = pos.z;
 
       let rotatedX = xPos * Math.cos(yRad) * Math.cos(zRad) - yPos * Math.cos(yRad) * Math.sin(zRad) + zPos * Math.sin(yRad);
       let rotatedY = xPos * (Math.cos(xRad) * Math.sin(zRad) + Math.cos(zRad) * Math.sin(xRad) * Math.sin(yRad)) + yPos * (Math.cos(xRad) * Math.cos(zRad) - Math.sin(xRad) * Math.sin(yRad) * Math.sin(zRad)) - zPos * Math.cos(yRad) * Math.sin(xRad);
@@ -17,6 +21,14 @@ var Mathematics = {
         z: Math.round(rotatedZ),      
       };
     },
+
+    calcCenterPos: function (startPos, endPos) {
+      return {
+        x: (startPos.x + endPos.x) / 2,
+        y: (startPos.y + endPos.y) / 2,
+        z: (startPos.z + endPos.z) / 2,
+      };
+    }
 }
 
 
