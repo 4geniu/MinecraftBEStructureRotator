@@ -16,9 +16,9 @@ const Mathematics = {
       let rotatedZ = xPos * (Math.sin(xRad) * Math.sin(zRad) - Math.cos(xRad) * Math.cos(zRad) * Math.sin(yRad)) + yPos * (Math.cos(zRad) * Math.sin(xRad) + Math.cos(xRad) * Math.sin(yRad) * Math.sin(zRad)) + zPos * Math.cos(xRad) * Math.cos(yRad);
       
       return {
-        x: Math.round(rotatedX),
-        y: Math.round(rotatedY),
-        z: Math.round(rotatedZ),      
+        x: rotatedX,
+        y: rotatedY,
+        z: rotatedZ,      
       };
     },
 
@@ -45,6 +45,7 @@ const Mathematics = {
       return {
         width: Math.abs(startPos.x - endPos.x),
         height: Math.abs(startPos.y - endPos.y),
+        depth: Math.abs(startPos.z - endPos.z),
       };
     }
 }
