@@ -1,4 +1,7 @@
-const Math = require('../scripts/Mathematics');
+//const Math = require('../scripts/Mathematics');
+import Mathematics from "../scripts/Mathematics";
+
+const Math = Mathematics;
 
 test("Center(50, 50, 50)とPos(100, 100, 100)との距離を求める。", ()=>{
   let centerPos = {x: 50, y: 50, z: 50};
