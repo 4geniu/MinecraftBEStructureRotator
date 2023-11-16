@@ -1,4 +1,5 @@
-const Math = require('../scripts/Mathematics');
+//const Math = require('../scripts/Mathematics');
+import Mathematics from "../scripts/Mathematics";
 
 test("(0,0,0)と(100,100,100)との中点を求める。", ()=>{
   let startPos = {x: 0, y: 0, z: 0};
