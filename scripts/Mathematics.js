@@ -1,4 +1,4 @@
-"use strict";
+i"use strict";
 
 const Mathematics = {
     rotatePos: function (pos, xDeg, yDeg, zDeg) {
@@ -51,3 +51,4 @@ const Mathematics = {
 
 
 export default Mathematics;
+modules.export = Mathematics;
