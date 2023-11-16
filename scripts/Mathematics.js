@@ -1,4 +1,4 @@
-i"use strict";
+"use strict";
 
 const Mathematics = {
     rotatePos: function (pos, xDeg, yDeg, zDeg) {
