@@ -50,5 +50,17 @@ const Mathematics = {
 }
 
 
-export default Mathematics;
-module.exports = Mathematics;
+if(javaScriptEnvironment()==="ES6") export default Mathematics;
+else if(javaScriptEnvironment()==="CommonJS") module.exports = Mathematics;
+
+
+const javaScriptEnvironment = () => {
+  if (typeof module !== 'undefined' && module.exports) 
+    return "CommonJS";
+  else if (typeof window !== 'undefined' && typeof window.exports === 'undefined') 
+    return "ES6";
+  
+    return "unknown"
+  
+};
+
