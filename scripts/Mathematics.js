@@ -51,4 +51,4 @@ const Mathematics = {
 
 
 export default Mathematics;
-modules.export = Mathematics;
+module.exports = Mathematics;
